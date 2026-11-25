@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendário Escolar | Escola Edificar</title>
+  <meta name="description" content="Calendário escolar da Escola Edificar: feriados, reuniões de pais e mestres, avaliações e eventos. Baixe o calendário para o seu celular.">
+  <meta name="theme-color" content="#141b93">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/sprite.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/calendar-cloud.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="calendario">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <noscript><nav class="noscript-nav" aria-label="Menu principal"><a href="index.html">Início</a> <a href="sobre.html">A Escola</a> <a href="etapas.html">Etapas de Ensino</a> <a href="familias.html">Alunos e Famílias</a> <a href="calendario.html">Calendário</a> <a href="noticias.html">Notícias</a> <a href="matriculas.html">Matrículas</a> <a href="contato.html">Contato</a></nav></noscript>
+  <script src="assets/js/layout.js" data-part="header"></script>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em"><ol><li><a href="index.html">Início</a></li><li><a href="familias.html">Alunos e Famílias</a></li><li><span aria-current="page">Calendário</span></li></ol></nav>
+        <h1>Calendário Escolar</h1>
+        <p>Feriados, reuniões, avaliações e eventos para você se organizar com antecedência.</p>
+      </div>
+    </section>
+
+    <div class="section" data-calendar>
+      <div class="container">
+        <div class="cal-next" data-calendar-next hidden></div>
+
+        <div class="cal-toolbar">
+          <div class="cal-toolbar__row">
+            <div class="chips" data-calendar-types role="group" aria-label="Filtrar por tipo de evento"></div>
+          </div>
+          <div class="cal-toolbar__row">
+            <div class="chips" data-calendar-years role="group" aria-label="Filtrar por ano"></div>
+            <button class="btn btn--outline btn--sm" type="button" data-calendar-ics><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg>Baixar calendário (.ics)</button>
+          </div>
+        </div>
+
+        <p class="sr-only" role="status" aria-live="polite" data-calendar-status></p>
+        <div data-calendar-list></div>
+
+        <p class="cal-note">As datas podem sofrer alterações. Em caso de dúvidas, fale com a secretaria. O arquivo .ics pode ser importado no Google Agenda, Outlook e no calendário do celular.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/layout.js" data-part="footer"></script>
+</body>
+</html>

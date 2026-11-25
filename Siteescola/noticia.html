@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícia | Escola Edificar</title>
+  <meta name="description" content="Leia as notícias e comunicados da Escola Edificar.">
+  <meta name="theme-color" content="#141b93">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/sprite.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/calendar-cloud.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="noticia">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <noscript><nav class="noscript-nav" aria-label="Menu principal"><a href="index.html">Início</a> <a href="sobre.html">A Escola</a> <a href="etapas.html">Etapas de Ensino</a> <a href="familias.html">Alunos e Famílias</a> <a href="calendario.html">Calendário</a> <a href="noticias.html">Notícias</a> <a href="matriculas.html">Matrículas</a> <a href="contato.html">Contato</a></nav></noscript>
+  <script src="assets/js/layout.js" data-part="header"></script>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="page-hero page-hero--slim">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em"><ol><li><a href="index.html">Início</a></li><li><a href="noticias.html">Notícias</a></li><li><span aria-current="page" data-article-title>Notícia</span></li></ol></nav>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div data-news-article></div>
+      </div>
+    </div>
+
+    <section class="section section--tint" aria-labelledby="relacionadas-titulo">
+      <div class="container">
+        <div class="head-row">
+          <h2 id="relacionadas-titulo">Veja também</h2>
+          <a class="btn btn--outline" href="noticias.html">Todas as notícias <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+        </div>
+        <ul class="news-grid" data-related-news></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/layout.js" data-part="footer"></script>
+</body>
+</html>
